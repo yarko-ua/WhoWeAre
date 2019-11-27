@@ -1,0 +1,166 @@
+
+section { background-color: #f6f6f6;
+    color: #3c3c3c;
+    box-sizing: border-box;
+    transition: all 0.7s ease-in-out;
+    font-family: 'Lato', sans-serif;
+}
+
+
+h2 {
+    text-align: center;
+    padding-top: 109px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+hr {
+    width: 45px;
+    height: 4px;
+    background-color: #dddbdb;
+    opacity: 0.9;
+    margin: 0 auto;
+}
+
+.title_whoweare {
+    width: 100%;
+}
+
+hr + p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+    max-width: 545px;
+    min-height: 40px;
+    max-height: 120px; 
+}
+
+.our_team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.human {
+    position:relative;
+    width: 300px;
+    margin: 0 15px;
+}
+
+.blue_hover {
+    background-color:#00b6de ;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+.blue_hover.one, .blue_hover.two, .blue_hover.three, .blue_hover.four {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0; 
+} */
+
+.human > .blue_hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+.social {
+    background-color: #00cce9;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    margin: 2px;
+    position: relative;
+}
+
+i {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.human:hover  .blue_hover{
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+
+.info {
+    margin-top: 22px;
+    margin-bottom: 117px;
+}
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #282528;
+}
+
+.position {
+    font-size: 14px;
+    font-weight: 300;
+    color: #646464;
+}
+
+.social:hover{
+    background-color: red;
+    box-shadow: inset 0px 0px 15px 8px #363636, 2px 2px 1px 1px #202020;
+}
+
+.social:hover i{
+    color: black;
+}
+
+.social:hover i[class*=facebook]{
+   transform: rotate(360deg);
+   transition-duration: 2s;
+}
+
+.social:hover i[class*=google]{
+  text-shadow: 3px 3px 3px #00b6de; 
+}
+
+.social:hover i[class*=twitter]{
+    animation-name: fly;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fly{
+
+0% {top: 8px; left: 0px;}
+5% {top: -8px; left: 10px; transform: rotateY(0deg); color: black;} 
+10% {top: -24px; left: 20px; transform: rotateY(0deg); color: black;} 
+15% {top: -40px; left: 30px; transform: rotateY(0deg); color: black;} 
+20% {top: -56px; left: 40px; transform: rotateY(0deg); color: red;}
+25% {top: -72px; left: 50px; transform: rotateY(0deg); color: yellow;} 
+30% {top: -88px; left: 60px; transform: rotateY(0deg); color: yellow;}
+35% {top: -104px; left: 70px; transform: rotateY(0deg); color: greenyellow;} 
+40% {top: -120px; left: 80px; transform: rotateY(0deg); color: greenyellow;}
+45% {top: -136px; left: 90px; transform: rotateY(0deg); color: aqua;} 
+50% {top: -153px; left: 100px; transform: rotateY(180deg); color: aqua;}
+55% {top: -136px; left: 90px; transform: rotateY(180deg); color: aqua;}
+60% {top: -120px; left: 80px; transform: rotateY(180deg); color: green;}
+65% {top: -104px; left: 70px; transform: rotateY(180deg); color: greenyellow;} 
+70% {top: -88px; left: 60px; transform: rotateY(180deg); color: yellow;}
+75% {top: -72px; left: 50px; transform: rotateY(180deg); color: yellow;} 
+80% {top: -56x; left: 40px; transform: rotateY(180deg); color: red;}
+85% {top: -40px; left: 30px; transform: rotateY(180deg); color: black;} 
+90% {top: -24x; left: 20px; transform: rotateY(180deg); color: black;}
+95% {top: -8px; left: 10px; transform: rotateY(180deg); color: black;} 
+100% {top: 8px; left: 0px;}
+
+}
