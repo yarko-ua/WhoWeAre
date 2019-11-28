@@ -2,7 +2,7 @@
 section { background-color: #f6f6f6;
     color: #3c3c3c;
     box-sizing: border-box;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.4s ease-in-out;
     font-family: 'Lato', sans-serif;
 }
 
@@ -20,7 +20,7 @@ hr {
     width: 45px;
     height: 4px;
     background-color: #dddbdb;
-    opacity: 0.9;
+    opacity: 0.8;
     margin: 0 auto;
 }
 
@@ -75,6 +75,7 @@ hr + p {
     top: 0;
     left: 0; 
 }
+
 .social {
     background-color: #00cce9;
     height: 42px;
@@ -96,13 +97,14 @@ i {
 
 .human:hover  .blue_hover{
     display: flex;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .info {
     margin-top: 22px;
     margin-bottom: 117px;
 }
+
 .name {
     font-size: 18px;
     font-weight: 700;
@@ -117,7 +119,15 @@ i {
 
 .social:hover{
     background-color: red;
-    box-shadow: inset 0px 0px 15px 8px #363636, 2px 2px 1px 1px #202020;
+    transform: skewX(-4deg);
+    box-shadow:  inset 3px 3px 1px 1px #474747;
+}
+
+.social.twitter:hover{
+    background-color: red;
+    transform: skewX(-10deg) translate(6px, -7px);
+    z-index: 2;
+    box-shadow: 3px 4px 1px 1px #252525;
 }
 
 .social:hover i{
@@ -125,12 +135,13 @@ i {
 }
 
 .social:hover i[class*=facebook]{
-   transform: rotate(360deg);
-   transition-duration: 2s;
+   transform: rotateY(180deg);
+   transition-duration: 0.9s;
 }
 
 .social:hover i[class*=google]{
-  text-shadow: 3px 3px 3px #00b6de; 
+    transform: rotate(360deg);
+    transition-duration: 0.9s;
 }
 
 .social:hover i[class*=twitter]{
